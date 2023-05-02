@@ -10,6 +10,7 @@
 int main(int argc, char** argv) {
   if (argc != 2) {
     std::cout << "Please provide restaurant list" << std::endl;
+    std::cout << "Usage: " << argv[0] << " <list>" << std::endl;
     return -1;
   }
   
@@ -21,6 +22,9 @@ int main(int argc, char** argv) {
     std::string line;
     while (input_file.good()) {
       std::getline(input_file, line);
+      if (line.empty() || line.at(0) == '#') {
+        continue;
+      }
       restaurants.emplace_back(line);
     }
   }
