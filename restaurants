@@ -1,3 +1,6 @@
+# Any line starts with '#' will be ignored
+# This line will be ignored
+
 Amore Eats
 Chipotle
 Chick-fil-A
@@ -25,3 +28,4 @@ Okey Poke
 Momo's Cafe
 Panera Bread
 Pho Nam Nam
+Hwa Gae Jang Tuh (HGJT)
